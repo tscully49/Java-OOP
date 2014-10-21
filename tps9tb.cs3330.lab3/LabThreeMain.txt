@@ -1,0 +1,15 @@
+	public static void main(String[] args) {
+		HeroFileReader heroFileReader = new HeroFileReader("DataFiles/Heroes.csv");
+		Hero[] heroes = heroFileReader.getHeroes();
+		LabThreeDriver.displayHeroes(heroes);
+		Hero villain = LabThreeDriver.createVillain();
+		System.out.println("Villain: " + villain.getName());
+		System.out.println("");
+		LabThreeDriver.battle(heroes,villain,10);
+		LabThreeDriver.displayFightResults();
+		LabThreeDriver.heroTraining(heroes);
+		LabThreeDriver.heroHits = 0;
+		LabThreeDriver.villainHits = 0;
+		battle(heroes,villain,10);
+		LabThreeDriver.displayFightResults();
+	}

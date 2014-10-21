@@ -1,0 +1,92 @@
+package mremtf.cs3330.lab00;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class LabOneDriver {
+
+	private static Scanner input;
+	
+	/**
+	 * Count the number of occurrences for prefix, suffix, and substring 
+	 * given a user input string compared against the strings stored in the file names.txt 
+	 * 
+	 * @param args Nothing is used from the args for this program
+	 */
+	public static void main(String[] args) {
+		
+		input = new Scanner(System.in);
+		String[] names = initArrayOfStrings("names.txt",10);
+		displayArrayOfStrings(names);
+		displaySortedArrayOfStrings(names);
+		
+		System.out.print("Enter a string to do comparison with: ");
+		String search = input.nextLine();
+		final int oldSchoolSubStrCnt = oldSchoolSubstringOccurrences(names,search);
+		System.out.println("Manual substring search, found: " + oldSchoolSubStrCnt);
+	
+		final int oldSchoolPrefixCnt = oldSchoolPrefixOccurrences(names,search);
+		System.out.println("Manual prefix search, found: " + oldSchoolPrefixCnt);
+		
+		System.out.println("Number of suffix found:" + countSuffixOccurrences(names,search));
+		
+		if (countPrefixOccurrences(names,search) != oldSchoolPrefixCnt) {
+			System.out.println("You have an incorrect solution!");
+		}
+		
+		if (countSubstringOccurrences(names,search) != oldSchoolSubStrCnt) {
+			System.out.println("You have an incorrect solution!");
+		}
+		
+		input.close();
+	}
+	
+	/**
+	 * Initializes the an array of Strings from a file located at the names.txt
+	 * 
+	 * @param filePath The location of the names used for the program
+	 * @param num The number of records the program wants to read
+	 * @return an array of strings that is populated
+	 */
+	public static String[] initArrayOfStrings(String filePath, int num) {
+
+	}
+	
+	/**
+	 * Displays the contents of the passed array of strings. If the array is
+	 * empty will not display contents. 
+	 * 
+	 * @param arrayOfStrings That is populated with strings
+	 */
+	public static void displayArrayOfStrings(String[] arrayOfStrings) {
+
+	}
+	
+	public static void displaySortedArrayOfStrings(String[] arrayOfStrings) {
+
+	}
+
+	public static int oldSchoolPrefixOccurrences(String[] arrayOfStrings, String prefix) {
+
+	}
+	
+	public static int oldSchoolSubstringOccurrences(String[] arrayOfStrings, String substring) {
+
+	}
+	
+
+	public static int countPrefixOccurrences(String[] arrayOfStrings, String prefix) {
+
+	}
+	
+
+	public static int countSuffixOccurrences(String[] arrayOfStrings, String suffix) {
+
+	}
+	
+	public static int countSubstringOccurrences (String[] arrayOfStrings, String substring) {
+
+	}
+}

@@ -1,0 +1,13 @@
+{
+  "C:\\Program Files\\Java\\jre8\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre8\\lib\\rt.jar",
+    "status": "RESOLVED",
+    "error": "No class path info available for \u0027C:\\Program Files\\Java\\jre8\\lib\\rt.jar\u0027. Skipped."
+  },
+  "Z:\\Workplace\\tps9tb.cs3330.optionalLab0\\src": {
+    "location": "Z:\\Workplace\\tps9tb.cs3330.optionalLab0\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027Z:\\Workplace\\tps9tb.cs3330.optionalLab0\\src\u0027. Skipped."
+  }
+}

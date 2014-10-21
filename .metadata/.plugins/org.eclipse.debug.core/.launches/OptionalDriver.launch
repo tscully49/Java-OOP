@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/tps9tb.cs3330.optionalLab0/src/src/cs3330/optional/lab0/OptionalDriver.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="src.cs3330.optional.lab0.OptionalDriver"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="tps9tb.cs3330.optionalLab0"/>
+</launchConfiguration>
